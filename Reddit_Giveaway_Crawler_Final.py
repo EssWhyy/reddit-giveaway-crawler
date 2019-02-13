@@ -1,4 +1,4 @@
-'''R/GIVEAWAYS CONTEST MINI WEB SCRAPER(PRAW)'''
+'''EssWhyy/Giveaway_Prawer_Final'''
 
 import praw
 import xlwt
@@ -6,14 +6,14 @@ import re
 from xlutils.copy import copy
 from xlrd import open_workbook
 
-print('Welcome to the free Reddit Contest Link Grabber')
+print('Reddit Giveaway Prawer')
 
 desireditemslist = []
 item = ''
 
 print("If there are any items which you wish to win, type them out, one by one and press enter to key in")
 print("Type done to proceed")
-print("Type clear to reset items")
+print("Type clear to reset the list")
 
 
 while item.lower() != 'done':
@@ -42,7 +42,7 @@ while USA != 'y' and USA != 'n':
 
 n = 0
 while n not in range(10,1001):
-    print("Search for how many new posts, type a number from 10-1000")
+    print("Search for how many new posts? Type a number from 10-1000")
     try:
         n = input()
         n = int(n)
@@ -71,16 +71,12 @@ col_indicator = 4
 number = 0
 list4 = []
 
-#Create a script application in reddit preferences. Change whenever making a new script/account
-#Password is not tracked by any program besides your own reddit account
-reddit = praw.Reddit(client_id='xxxxxxxxxxxx',
-                     client_secret='xxxxxxxxxxxxxxxxxxxxxxxxx',
-                     user_agent='Whatever you named your script program',
-                     username='',
-                     password='')
+#Creates a script program to run the praw web crawler, see screenshot for example
 
-if not reddit.read_only:
-    print ("Successfully imported giveaway data!")
+reddit = praw.Reddit(client_id='xxxxxxxxxxxx',
+ client_secret='xxxxxxxxxxxxxxxxxxxxxxxxx',
+ user_agent='Whatever you named your script program')
+
 
 subreddit = reddit.subreddit('giveaways')
 
