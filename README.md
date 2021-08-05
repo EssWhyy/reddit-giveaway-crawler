@@ -10,7 +10,8 @@ There is the option to include any additional items to search for, if any of the
 ### Requirements:
 
 - Python 3 with PRAW, XLUTILS installed 
-- A Reddit Account Spreadsheet Manager (Like Microsoft Excel)
+- A Reddit Account 
+- Microsoft Excel or equivalent
 
 ### How to use:
 
