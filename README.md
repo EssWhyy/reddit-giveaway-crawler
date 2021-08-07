@@ -25,7 +25,7 @@ There is the option to include any additional items to search for, if any of the
 
 ### Notes:
 
-- You have to install python PRAW using (pip install praw)
+- You have to install PRAW and XLUTILS in Python3 using (pip install xxx)
 
 - XLUTILS only saves in 2003 Excel Format (.xls) as of v0.8 so it would be wise to create a separate sheet to import data there, and keep any filters/formulas/formatting if used.
 
