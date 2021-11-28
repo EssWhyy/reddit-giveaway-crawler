@@ -8,6 +8,10 @@ Filters out only entries with a certain location tag, and for a certain deadline
 
 There is the option to include any additional items to search for, if any of their desired items is included in post title, it will be highlighted at the end of the sheet for one to take note of.
 
+##Here's an example of the output data of the program:
+<img width="1275" alt="Screenshot 2021-11-28 at 12 13 31 PM" src="https://user-images.githubusercontent.com/39799639/143729386-0ba14748-8324-4702-bba2-991d4150162a.png">
+
+
 ### Requirements:
 
 - Python 3 with PRAW, XLUTILS installed 
